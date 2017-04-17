@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = 'Zetetic LLC'
   s.source   = { :git => 'https://github.com/Rostyk/RSQLCipher.git', :tag => s.version.to_s }
   s.preserve_paths = '*.a'
-  s.library = 'TestLibrary'
-  s.xcconfig     =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/RSQLCipher"' }
+  s.libraries = 'crypto', 'sqlcipher'
+  s.xcconfig     =  { 'OTHER_CFLAGS' => '-DSQLITE_HAS_CODEC', 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/RSQLCipher"' }
   s.platform = :ios
 end
