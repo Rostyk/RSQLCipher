@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'RSQLCipher'
-  s.version  = '2.1.1'
+  s.version  = '2.1.3'
   s.license  = 'BSD'
   s.summary  = 'Full Database Encryption for RSQLite.'
   s.description  = 'RSQLCipher is an open source extension to SQLite.'
